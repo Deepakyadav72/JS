@@ -43,10 +43,47 @@ switch (num){
 }
 
 
+//4.Input a number (1–4). 
+let num=6;
 
-const arr=[1,2,3,4,5,6,7,8,9,10]
-console.log("arr:", arr.length);
-for( let i=0; i,arr.length;i++)
+switch (num){
+    case 1:
+        console.log("Adition");
+        break;
+        case 2:
+        console.log("subtraction");
+        break;
+        case 3:
+        console.log("Multiplicatin");
+        break;
+        case 4:
+        console.log("Division");
+        break;
+        default:
+            console.log(None);
+
+
+}
+
+
+
+// 5. A user select a drink:
+
+let Select_A_Drink=C:
+switch(Select_A_Drink)
 {
-    console.log("i:",arr[i]);
+    case "C":
+        console.log("Coffee");
+        break;
+        case "T":
+            console.log("Tea");
+            break;
+            case "J":
+                console.log("Juice");
+                break;
+                case "W":
+                    console.log("Water");
+                    break;
+                    default:
+                        console.log("Not a Drink")
 }
