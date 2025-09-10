@@ -29,7 +29,7 @@
 
 
 
-//Reduce
+// Reduce
 
 // let arr=[1,2,3,4,5,6,7,8,9,10];
 
@@ -39,41 +39,41 @@
 // console.log(val);
 
 // HOF: create a reducer for summing a property.
-// const items=[
-//     {name:'Book',price:300},
-//     {name:'pen',price:50},
-//     {name:'notebook',price:150},
-// ];
+const items=[
+    {name:'Book',price:300},
+    {name:'pen',price:50},
+    {name:'notebook',price:150},
+];
 
-// const createSumReduce=(prop)=>{
-//     return(acc,obj)=>acc+obj[prop];
-// };
-// const totalPrice=items.reduce(createSumReduce('price'),0);
-// console.log(totalPrice);
+const createSumReduce=(prop)=>{
+    return(acc,obj)=>acc+obj[prop];
+};
+const totalPrice=items.reduce(createSumReduce('price'),0);
+console.log(totalPrice);
 
 // conso
 
 
-const fruits=['Apple','Banana','Apple','Banana','Orange','Apple'];
+// const fruits=['Apple','Banana','Apple','Banana','Orange','Apple'];
 
-const countFruits=fruits.reduce((acc,fruits)=>{
-    acc[fruits]=(acc[fruits]|| 0)+1;
-    return acc;
-},{});
+// const countFruits=fruits.reduce((acc,fruits)=>{
+//     acc[fruits]=(acc[fruits]|| 0)+1;
+//     return acc;
+// },{});
 
-console.log(countFruits);
+// console.log(countFruits);
 
 
 
-let str= 'Massaaiii';
-let funstr=str.split('');
-console.log('->funstr:',funstr);
+// let str= 'Massaaiii';
+// let funstr=str.split('');
+// console.log('->funstr:',funstr);
 
-const countstring=funstr.reduce((acc,string)=>{
-    acc[string]=(acc[string]||0)+1;
-    return acc;
+// const countstring=funstr.reduce((acc,string)=>{
+//     acc[string]=(acc[string]||0)+1;
+//     return acc;
 
-},{});
-console.log(countstring)
+// },{});
+// console.log(countstring)
 
 
