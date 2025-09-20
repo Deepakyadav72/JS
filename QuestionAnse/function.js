@@ -71,8 +71,4 @@ function maximum(a1,b1){
 
 
 
-// ....................
-function name1(Deepak){
-    return Deepak;
-}
-console.log(deepak);
+
