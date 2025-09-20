@@ -24,10 +24,10 @@ if (num1 > num2) {
 
 //Find the largest among three numbers.
 
-let num1 =12;
-let num2 =24;
-let num3 =18;
-if (num1 > num2 && num1 > num3) {
+let num3 =12;
+let num4 =24;
+let num5 =18;
+if (num3 > num4 && num3 > num5) {
   console.log("num1 is the greatest");
 } else if (num2 > num1 && num2 > num3) {
   console.log("num2 is the greatest");
@@ -94,9 +94,9 @@ if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'
 
 //Check if a number is divisible by both 3 and 5.
 
-let num = 15;
+let numb = 15;
 
-if (num % 3 === 0 && num % 5 === 0) {
+if (numb % 3 === 0 && numb % 5 === 0) {
   console.log("Divisible by both 3 and 5");
 } else {
   console.log("Not divisible by both 3 and 5");
