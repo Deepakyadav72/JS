@@ -1,6 +1,6 @@
 const Base_URL =`https://official-joke-api.appspot.com/random_joke`;
 
-Const apiCalling= async()=>{
+const apiCalling= async()=>{
     try{
         let data =await fetch(Base_URL);
         let res =await data.json();
