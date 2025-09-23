@@ -1,16 +1,25 @@
-.card-div{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+.card-div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5%;
+
 }
 
 .card-div>img{
     width: 70%;
-    height: 200px;
+    height: 185px;
+    
+    
+    
+
 
 }
-#mainContainer{
+#mainContainer {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
     justify-items: center;
     align-content: center;
+
+    
+
 }
