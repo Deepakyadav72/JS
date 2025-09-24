@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+<body>
+    <h1>Hello Deepak Yadav how are you???</h1>
+    <button id="btn" onclick="LS_insert()">Add to Ls</button>
+
+    <div class="LS"></div>
+</body>
+<script>
+
+    // LS
+    let heading_1=document.getElementsByName("h1")[0].innerText;
+    let btn=document.getElementsByName("btn");
+    let div_LS=document.getElementsByTagName("div")[0];
+
+    function LS_insert(){
+        localStorage.setItem("name",heading_1);
+        render_UI();
+    }
+
+    function render_UI(){
+        let LS_value=localStorage.getItem("name")||"";
+        div_LS.innerHTML=`
+        <p>${LS_value}</p>`
+    }
+
+</script>
+</html>
+
+
+
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+<body>
+    <h1 id="heading">Hello Deepak Yadav how are you???</h1>
+    <button id="btn" onclick="LS_insert()">Add to LS</button>
+
+    <div class="LS"></div>
+
+    <script>
+        
+        let heading_1 = document.getElementById("heading").innerText;
+        let div_LS = document.querySelector(".LS");
+
+        
+        function LS_insert() {
+            localStorage.setItem("name", heading_1);
+            render_UI();
+        }
+
+      
+        function render_UI() {
+            let LS_value = localStorage.getItem("name") || "";
+            div_LS.innerHTML = `<p>${LS_value}</p>`;
+        }
+
+        
+        window.onload = render_UI;
+    </script>
+</body>
+</html> -->
