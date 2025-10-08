@@ -6,9 +6,11 @@
     <title>Tv Website</title>
     <link rel="stylesheet" href="TV API.css">
 </head>
-   <h1 class="mi">TV MAZE</h1>
+   
+<body>
+  
 
-   <!-- <nav class="navbar">
+   <nav class="navbar">
     <div class="logo">TVMaze App</div>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
@@ -16,13 +18,13 @@
       <li><a href="#">Genres</a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </nav>  -->
-    
-   <div id="maincontainer"></div>
+  </nav> 
 
-   
+  <h1>TV SHOW</h1>
+  
+  <input onchange="api_fetch()" type="text" placeholder="enter your show..." id="search-input">
 
-<body onload="api_fetch()">
+     <div id="maincontainer"></div>
 </body>
 
  <script src="TV API appli.js"></script>

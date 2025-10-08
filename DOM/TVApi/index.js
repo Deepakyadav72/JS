@@ -1,5 +1,5 @@
 const apifunc  = (param) =>{
-    return API_BASE_URL = `https://api.tvmaze.com/search/shows?q=${param}`;
+    return API_BASE_URL = https://api.tvmaze.com/search/shows?q=${param};
     
 }
 
@@ -39,14 +39,14 @@ const apifunc  = (param) =>{
 
 
 
-        id.innerText = `id ${element.id}`;
+        id.innerText = id ${element.id};
         img.src = element.image.original;
-        name.innerText = `name ${element.name}`;
-        language.innerText = `language ${element.language}`;
-        genres.innerText = `genres ${element.genres}`;
-        runTime.innerText = `runTime ${element.runTime}`;
-        rating.innerText = `rating ${element.rating.average}`;
-       summary.innerHTML = `summary ${element.summary}`;
+        name.innerText = name ${element.name};
+        language.innerText = language ${element.language};
+        genres.innerText = genres ${element.genres};
+        runTime.innerText = runTime ${element.runTime};
+        rating.innerText = rating ${element.rating.average};
+       summary.innerHTML = summary ${element.summary};
 
 
         // Summary with See More / See Less (HTML preserved)
